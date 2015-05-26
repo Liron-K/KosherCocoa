@@ -70,8 +70,43 @@
  *  @return The name of the zman, in Hebrew.
  */
 
+-(NSString*)getStringForLanguage:(NSString*)language
+{
+    static NSMutableDictionary * languagePacks = nil;
+  
+    if(languagePacks == nil) {
+        languagePacks = [NSMutableDictionary dictionary];
+    }
+  
+    NSDictionary* languageStrings = languagePacks[language];
+  
+    if(!languageStrings)
+    {
+        // Not using NSBundle mainBundle because of this:
+        // http://stackoverflow.com/questions/19309092/nsurl-to-file-path-in-test-bundle-with-xctest
+        NSString *fname = [[NSBundle bundleForClass:[self class]]pathForResource:language ofType:@"strings"];
+        NSDictionary *d = [NSDictionary dictionaryWithContentsOfFile:fname];
+        languagePacks[language] = d;
+      
+        languageStrings = d;
+    }
+  
+    if(!languageStrings)
+        return nil;
+  
+    NSString* key = NSStringFromSelector(self.selector);
+  
+    NSString* value = languageStrings[key];
+    if(value)
+        return value;
+    return nil;
+}
+
 - (NSString *)hebrewName
 {
+    NSString* n = [self getStringForLanguage:@"Hebrew"];
+    if(n)
+        return n;
     return [self _metadataForCurrentZman][@"koshercocoa.name.hebrew"];
 }
 

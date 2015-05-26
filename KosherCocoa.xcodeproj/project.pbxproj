@@ -90,6 +90,8 @@
 		46BAA9F61AD592B300A0FE4B /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
 		46BAA9F71AD592B800A0FE4B /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
 		46BAA9F81AD592BB00A0FE4B /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
+		99BA49091B1510E4004AE0E1 /* Hebrew.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99BA49011B150D9D004AE0E1 /* Hebrew.strings */; };
+		99BA490A1B1510E7004AE0E1 /* Ashkenaz.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99BA49031B150DB3004AE0E1 /* Ashkenaz.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,8 @@
 		468C006E17F1E3450070CDB5 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
 		46BAA9F41AD592B300A0FE4B /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
 		46BAA9F51AD592B300A0FE4B /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
+		99BA49011B150D9D004AE0E1 /* Hebrew.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Hebrew.strings; path = Strings/Hebrew.strings; sourceTree = "<group>"; };
+		99BA49031B150DB3004AE0E1 /* Ashkenaz.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Ashkenaz.strings; path = Strings/Ashkenaz.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +379,7 @@
 		466A3AB617CAF3B900056F16 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				99BA49001B150D63004AE0E1 /* Strings */,
 				466A3AB717CAF3B900056F16 /* Categories */,
 				466A3ACF17CAF3B900056F16 /* Core */,
 				466A3AF417CAF3B900056F16 /* Headers */,
@@ -567,6 +572,15 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		99BA49001B150D63004AE0E1 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				99BA49011B150D9D004AE0E1 /* Hebrew.strings */,
+				99BA49031B150DB3004AE0E1 /* Ashkenaz.strings */,
+			);
+			name = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -676,6 +690,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4618BBA41664216F00AD3CE5 /* InfoPlist.strings in Resources */,
+				99BA49091B1510E4004AE0E1 /* Hebrew.strings in Resources */,
+				99BA490A1B1510E7004AE0E1 /* Ashkenaz.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

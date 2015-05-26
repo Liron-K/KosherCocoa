@@ -1,0 +1,18 @@
+/* 
+  Hebrew.strings
+  KosherCocoa
+
+  Created by Liron Kopinsky on 5/26/15.
+  Copyright (c) 2015 Moshe Berman. All rights reserved.
+*/
+"shaahZmanisMogenAvraham" = "שעה זמנית (מ״א)";
+"shaahZmanisGra" = "שעה זמנית (גר״א)";
+"shaahZmanis16Point1Degrees" = "שעה זמנית (16.1 מעלות)";
+"shaahZmanis18Degrees" = "שעה זמנית (18 מעלות)";
+"shaahZmanis19Point8Degrees" = "שעה זמנית (19.8 מעלות)";
+"shaahZmanis26Degrees" = "שעה זמנית (26 מעלות)";
+"shaahZmanis60Minutes" = "שעה זמנית (60 דקות)";
+"shaahZmanis72Minutes" = "שעה זמנית (72 דקות)";
+"shaahZmanis72MinutesZmanis" = "שעה זמנית (72 דקות זמנית)";
+"shaahZmanis90Minutes" = "שעה זמנית (90 דקות)";
+"shaahZmanis90MinutesZmanis" = "שעה זמנית (90 דקות זמנית)";

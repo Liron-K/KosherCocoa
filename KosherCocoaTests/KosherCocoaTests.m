@@ -12,6 +12,7 @@
 #import "NSDate+Components.h"
 
 #import "KosherCocoa.h"
+#import "KCZman.h"
 
 
 @interface KosherCocoaTests ()
@@ -414,7 +415,13 @@
     NSString *dayString = [[self hebrewFormatter] stringFromDate:date];
     
     NSLog(@"%@ : %li", dayString, day);
-    
+}
+
+-(void)testZmainim
+{
+    KCZman* zman = [[KCZman alloc] initWithSelector:@selector(shaahZmanisMogenAvraham)];
+    NSString* hebrew = zman.hebrewName;
+    XCTAssert([hebrew isEqualToString:@"שעה זמנית (מ״א)"]);
 }
 
 
